@@ -1,0 +1,378 @@
+<style>
+  @import url(./styles/styles.scss);
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/styles.scss">
+  <script src="script/script.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Sole Society
+      — sneaker landing page showcasing premium footwear collection, product listings, features, and customer reviews.
+    </h2>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">Sole<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="nav-cta">Shop now</a></li>
+      </ul>
+      <div style="display:none;font-size:1.4rem;cursor:pointer;color:var(--white);" class="burger">☰</div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-eyebrow">New drop — Spring 2026</div>
+        <h1 class="hero-title">
+          Move<br>
+          <span class="outline">Different</span><br>
+          Every<br>Step
+        </h1>
+        <p class="hero-sub">Sneakers built for people who live in motion. Whether you're running streets or chasing
+          records — find the pair that moves with you.</p>
+        <div class="hero-actions">
+          <button class="btn-primary">Shop the drop</button>
+          <button class="btn-ghost">Explore all</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Styles</div>
+          </div>
+          <div>
+            <div class="stat-num">48h</div>
+            <div class="stat-label">Delivery</div>
+          </div>
+          <div>
+            <div class="stat-num">4.9★</div>
+            <div class="stat-label">Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO SNEAKER SVG (illustrated) -->
+      <div class="hero-image-wrap">
+        <div class="hero-img-bg"></div>
+        <svg class="hero-sneaker-svg" viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="Red and white hero sneaker illustration">
+          <!-- Shadow -->
+          <ellipse cx="262" cy="282" rx="170" ry="12" fill="rgba(0,0,0,0.5)" />
+          <!-- SOLE -->
+          <rect x="60" y="220" width="390" height="38" rx="10" fill="#1a1a1a" />
+          <rect x="68" y="225" width="376" height="26" rx="8" fill="#222" />
+          <!-- MIDSOLE -->
+          <path d="M75 225 Q120 200 200 195 L380 195 Q430 195 450 215 L450 226 L75 226Z" fill="#E84A1B" />
+          <!-- UPPER MAIN -->
+          <path d="M90 225 Q95 170 140 150 Q190 128 270 130 L400 132 Q440 135 450 165 L450 220 Z" fill="#F8F6F1" />
+          <!-- COLLAR/ANKLE PANEL -->
+          <path d="M90 225 Q92 195 108 175 Q125 158 150 155 L180 154 Q170 175 158 210 Z" fill="#e0ddd8" />
+          <!-- TOE BOX -->
+          <path d="M90 225 Q88 205 95 185 Q108 162 135 152 Q150 148 162 151 Q145 170 130 200 Q112 218 90 225Z"
+            fill="#dddbd5" />
+          <!-- TONGUE -->
+          <path d="M195 134 Q215 130 230 132 L232 175 Q215 172 198 175 Z" fill="#e5e2dd" />
+          <!-- LACES -->
+          <line x1="204" y1="140" x2="228" y2="139" stroke="#0E0E0E" stroke-width="2" stroke-linecap="round" />
+          <line x1="202" y1="149" x2="230" y2="148" stroke="#0E0E0E" stroke-width="2" stroke-linecap="round" />
+          <line x1="201" y1="158" x2="231" y2="157" stroke="#0E0E0E" stroke-width="2" stroke-linecap="round" />
+          <line x1="200" y1="167" x2="232" y2="166" stroke="#0E0E0E" stroke-width="2" stroke-linecap="round" />
+          <!-- SIDE STRIPE / LOGO SWOOSH -->
+          <path d="M155 165 Q220 140 340 148 Q380 150 400 165 Q370 158 310 162 Q240 166 185 188 Z" fill="#E84A1B"
+            opacity="0.9" />
+          <!-- HEEL CAP -->
+          <path d="M430 170 Q452 175 452 200 L452 222 L418 222 L420 178 Z" fill="#e0ddd8" />
+          <!-- ACCENT HEEL STRIPE -->
+          <rect x="440" y="172" width="8" height="48" rx="2" fill="#E84A1B" />
+          <!-- SOLE TREAD LINES -->
+          <line x1="100" y1="248" x2="100" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="130" y1="248" x2="130" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="160" y1="248" x2="160" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="190" y1="248" x2="190" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="220" y1="248" x2="220" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="250" y1="248" x2="250" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="280" y1="248" x2="280" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="310" y1="248" x2="310" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="340" y1="248" x2="340" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="370" y1="248" x2="370" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="400" y1="248" x2="400" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+          <line x1="430" y1="248" x2="430" y2="258" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-inner">
+        <span class="marquee-item">Free returns <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">Limited editions <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">48h delivery <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">100+ brands <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">Authenticity guaranteed <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">New drops weekly <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">Free returns <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">Limited editions <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">48h delivery <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">100+ brands <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">Authenticity guaranteed <span class="marquee-dot">•</span></span>
+        <span class="marquee-item">New drops weekly <span class="marquee-dot">•</span></span>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section class="products" style="padding: 5rem 4rem;">
+      <div class="products-header">
+        <div>
+          <div class="section-eyebrow">Featured drops</div>
+          <h2 class="section-title">This season's picks</h2>
+        </div>
+        <div class="filter-tabs">
+          <button class="tab active">All</button>
+          <button class="tab">Running</button>
+          <button class="tab">Street</button>
+          <button class="tab">Collab</button>
+        </div>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- CARD 1 -->
+        <div class="product-card">
+          <div class="product-img-wrap" style="background:#1c1c1c;">
+            <div class="product-tag">New</div>
+            <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="110" cy="122" rx="80" ry="6" fill="rgba(0,0,0,0.4)" />
+              <rect x="30" y="96" width="162" height="18" rx="5" fill="#111" />
+              <path d="M35 96 Q40 75 70 65 Q100 55 140 56 L175 58 Q195 62 195 80 L195 97Z" fill="#F8F6F1" />
+              <path d="M35 96 Q36 82 44 72 Q56 64 70 62 L78 62 Q68 76 60 92Z" fill="#e0ddd8" />
+              <path d="M70 63 Q90 58 100 59 L102 82 Q88 80 73 82Z" fill="#e5e2dd" />
+              <line x1="75" y1="65" x2="100" y2="64" stroke="#111" stroke-width="1.5" stroke-linecap="round" />
+              <line x1="74" y1="71" x2="101" y2="70" stroke="#111" stroke-width="1.5" stroke-linecap="round" />
+              <line x1="73" y1="77" x2="102" y2="76" stroke="#111" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M58 75 Q100 60 158 62 Q178 64 184 75 Q160 70 120 72 Q85 74 68 85Z" fill="#E84A1B"
+                opacity="0.9" />
+              <rect x="185" y="70" width="4" height="26" rx="1.5" fill="#E84A1B" />
+            </svg>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Air Stride Pro</div>
+            <div class="product-style">Running · White / Crimson</div>
+            <div class="product-footer">
+              <div class="product-price">$149</div>
+              <button class="add-btn"><i class="ti ti-plus" aria-label="Add to cart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product-card">
+          <div class="product-img-wrap" style="background:#1a1a2e;">
+            <div class="product-tag" style="background:#6C63FF;">Collab</div>
+            <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="110" cy="122" rx="80" ry="6" fill="rgba(0,0,0,0.4)" />
+              <rect x="30" y="96" width="162" height="18" rx="5" fill="#0a0a1a" />
+              <path d="M35 96 Q40 75 70 65 Q100 55 140 56 L175 58 Q195 62 195 80 L195 97Z" fill="#6C63FF" />
+              <path d="M35 96 Q36 82 44 72 Q56 64 70 62 L78 62 Q68 76 60 92Z" fill="#5a52e0" />
+              <path d="M70 63 Q90 58 100 59 L102 82 Q88 80 73 82Z" fill="#7b74ff" />
+              <line x1="75" y1="65" x2="100" y2="64" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"
+                stroke-linecap="round" />
+              <line x1="74" y1="71" x2="101" y2="70" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"
+                stroke-linecap="round" />
+              <line x1="73" y1="77" x2="102" y2="76" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"
+                stroke-linecap="round" />
+              <path d="M58 75 Q100 60 158 62 Q178 64 184 75 Q160 70 120 72 Q85 74 68 85Z"
+                fill="rgba(255,255,255,0.2)" />
+              <rect x="185" y="70" width="4" height="26" rx="1.5" fill="rgba(255,255,255,0.4)" />
+              <rect x="30" y="100" width="162" height="12" rx="4" fill="#1a1760" />
+            </svg>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cloud Phantom X</div>
+            <div class="product-style">Collab drop · Night Violet</div>
+            <div class="product-footer">
+              <div class="product-price">$219</div>
+              <button class="add-btn"><i class="ti ti-plus" aria-label="Add to cart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product-card">
+          <div class="product-img-wrap" style="background:#1a1208;">
+            <div class="product-tag" style="background:#BA7517;">Limited</div>
+            <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="110" cy="122" rx="80" ry="6" fill="rgba(0,0,0,0.4)" />
+              <rect x="30" y="96" width="162" height="18" rx="5" fill="#111" />
+              <path d="M35 96 Q40 75 70 65 Q100 55 140 56 L175 58 Q195 62 195 80 L195 97Z" fill="#EF9F27" />
+              <path d="M35 96 Q36 82 44 72 Q56 64 70 62 L78 62 Q68 76 60 92Z" fill="#d68d18" />
+              <path d="M70 63 Q90 58 100 59 L102 82 Q88 80 73 82Z" fill="#f5b444" />
+              <line x1="75" y1="65" x2="100" y2="64" stroke="#111" stroke-width="1.5" stroke-linecap="round" />
+              <line x1="74" y1="71" x2="101" y2="70" stroke="#111" stroke-width="1.5" stroke-linecap="round" />
+              <line x1="73" y1="77" x2="102" y2="76" stroke="#111" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M58 75 Q100 60 158 62 Q178 64 184 75 Q160 70 120 72 Q85 74 68 85Z" fill="rgba(0,0,0,0.25)" />
+              <rect x="185" y="70" width="4" height="26" rx="1.5" fill="#633806" />
+              <rect x="30" y="100" width="162" height="12" rx="4" fill="#0E0E0E" />
+            </svg>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Desert Tempo</div>
+            <div class="product-style">Street · Amber / Black</div>
+            <div class="product-footer">
+              <div class="product-price">$179</div>
+              <button class="add-btn"><i class="ti ti-plus" aria-label="Add to cart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="product-card">
+          <div class="product-img-wrap" style="background:#0e1a12;">
+            <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="110" cy="122" rx="80" ry="6" fill="rgba(0,0,0,0.4)" />
+              <rect x="30" y="96" width="162" height="18" rx="5" fill="#111" />
+              <path d="M35 96 Q40 75 70 65 Q100 55 140 56 L175 58 Q195 62 195 80 L195 97Z" fill="#639922" />
+              <path d="M35 96 Q36 82 44 72 Q56 64 70 62 L78 62 Q68 76 60 92Z" fill="#527c18" />
+              <path d="M70 63 Q90 58 100 59 L102 82 Q88 80 73 82Z" fill="#7ab530" />
+              <line x1="75" y1="65" x2="100" y2="64" stroke="#F8F6F1" stroke-width="1.5" stroke-linecap="round"
+                opacity="0.4" />
+              <line x1="74" y1="71" x2="101" y2="70" stroke="#F8F6F1" stroke-width="1.5" stroke-linecap="round"
+                opacity="0.4" />
+              <line x1="73" y1="77" x2="102" y2="76" stroke="#F8F6F1" stroke-width="1.5" stroke-linecap="round"
+                opacity="0.4" />
+              <path d="M58 75 Q100 60 158 62 Q178 64 184 75 Q160 70 120 72 Q85 74 68 85Z"
+                fill="rgba(255,255,255,0.15)" />
+              <rect x="185" y="70" width="4" height="26" rx="1.5" fill="#F8F6F1" opacity="0.6" />
+              <rect x="30" y="100" width="162" height="12" rx="4" fill="#0E0E0E" />
+            </svg>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Forest Run Lite</div>
+            <div class="product-style">Trail running · Moss / Ivory</div>
+            <div class="product-footer">
+              <div class="product-price">$135</div>
+              <button class="add-btn"><i class="ti ti-plus" aria-label="Add to cart"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURE BAND -->
+    <div class="feature-band">
+      <div>
+        <div class="section-eyebrow" style="color:rgba(248,246,241,0.6);">Why Sole.</div>
+        <h2 class="section-title">Built for real life, not just a photoshoot</h2>
+        <p class="section-sub">Every pair we carry passes a set of standards most stores skip. Comfort, durability, and
+          actual style — not just hype.</p>
+      </div>
+      <ul class="feature-list">
+        <li class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="ti ti-shield-check"
+              style="font-size:1.6rem; color:rgba(248,246,241,0.9);"></i></div>
+          <strong>Authenticity check</strong>
+          <p>Every pair verified before it ships — no fakes, ever.</p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="ti ti-truck"
+              style="font-size:1.6rem; color:rgba(248,246,241,0.9);"></i></div>
+          <strong>48h delivery</strong>
+          <p>Order by noon, get it in 2 days anywhere in the country.</p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="ti ti-refresh"
+              style="font-size:1.6rem; color:rgba(248,246,241,0.9);"></i></div>
+          <strong>Free returns</strong>
+          <p>30 days, no questions. Fit should feel right.</p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="ti ti-star"
+              style="font-size:1.6rem; color:rgba(248,246,241,0.9);"></i></div>
+          <strong>Expert curation</strong>
+          <p>Drops picked by people who wear sneakers every day.</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- REVIEWS -->
+    <section class="testimonials" style="padding: 5rem 4rem;">
+      <div class="section-eyebrow">What people say</div>
+      <h2 class="section-title">Real reviews, real people</h2>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Got the Cloud Phantom X and I genuinely cannot stop wearing them. Arrived in two days,
+            packaged perfectly. Quality is unreal."</p>
+          <div class="reviewer">
+            <div class="avatar" style="background:#2a1e52; color:#a99bea;">JM</div>
+            <div>
+              <div class="reviewer-name">Jordan M.</div>
+              <div class="reviewer-tag">Berlin · Verified buyer</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Returned a pair that didn't fit and they sorted it in 24 hours with no fuss. Then the
+            replacement arrived the next day. Sold."</p>
+          <div class="reviewer">
+            <div class="avatar" style="background:#1a2e1a; color:#86c44a;">SK</div>
+            <div>
+              <div class="reviewer-name">Sara K.</div>
+              <div class="reviewer-tag">Amsterdam · Verified buyer</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"I was skeptical about buying sneakers online but the authenticity guarantee changed my
+            mind. You can feel the difference."</p>
+          <div class="reviewer">
+            <div class="avatar" style="background:#2e1810; color:#e89a6a;">TR</div>
+            <div>
+              <div class="reviewer-name">Tom R.</div>
+              <div class="reviewer-tag">London · Verified buyer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="final-cta">
+      <div class="section-eyebrow" style="text-align:center;">Don't miss the next drop</div>
+      <h2 class="section-title">Your next pair<br>is waiting</h2>
+      <p class="section-sub">200+ styles. New arrivals every week. Free 48h delivery on your first order.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <button class="btn-primary" style="font-size:0.9rem; padding:1rem 2.5rem;">Shop now</button>
+        <button class="btn-ghost" style="font-size:0.9rem; padding:1rem 2.5rem;">Get notified</button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="nav-logo">Sole<span style="color:var(--accent);">.</span></div>
+      <div class="footer-copy">© 2026 Sole. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <a href="#">Instagram</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
